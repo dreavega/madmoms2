@@ -1,16 +1,21 @@
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 #wrapper {
-  padding-top: 85px
+  padding-top: 85px !important
 }
 
 .bg-light-gray {
     background-color: #eee;
 }
 
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
 
 /* navbar shit */
 
@@ -344,7 +349,6 @@ header .intro-text {
 }
 
 header .intro-lead-in {
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
@@ -485,9 +489,9 @@ h1 {
 }
 
 .pledge-text {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 16px;
+  letter-spacing: 0.025em;
   line-height: 24px;
   background-color: rgba(0, 0, 0, 0.74);
   padding-top: 28px;
@@ -495,6 +499,7 @@ h1 {
 }
 
 .pledge-text h3 {
+  text-transform: uppercase;
   font-size: 26px;
   color: #fff;
   margin-bottom: 25px;
@@ -514,7 +519,6 @@ h1 {
 }
 
 .register {
-  font-family: 'Quicksand', sans-serif;
   font-weight: 400,600;
   text-align: center;
   padding-top: 40px
@@ -652,4 +656,106 @@ form .input-holder.active .input-title {
 .welcome-msg.active .paragraph-message {
   margin-top: 15px;
   transition-delay: 0.8s;
+}
+
+
+/* WHY HEADER */
+.hero {
+  background: url("../img/prego1.png") no-repeat center center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-position:center;
+}
+
+.hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    /*transform: translateY(-50%); */
+}
+
+.hero h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 4.5rem;
+
+}
+
+
+
+/* forum tabs */
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 20px;
+  margin-left: 50px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #6649a3;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #6649a3;
+  background-image: #6649a3;
+  color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #5A55A3;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
 }
